@@ -1,0 +1,701 @@
+/* EXIT */
+button.learn-more .circle {
+    background: #fff;
+  }
+  button.learn-more .circle .icon {
+    background: #fff;
+  }
+  button.learn-more .circle .icon.arrow::before {
+    border-top: 0.125rem solid #c80000;
+    border-right: 0.125rem solid #c80000;
+  }
+  button.learn-more .button-text {
+    color: #fff;
+  }
+  button:hover .circle .icon.arrow {
+    background: #c80000;
+  }
+  button:hover .button-text {
+    color: #c80000;
+  }
+  
+/* USER LOGIN */
+  .main_info {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .animated-border-quote {
+    font-size: 30px;
+    font-weight: 800;
+    display: inline-block;
+    max-width: 20em;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    line-height: 0.5;
+    text-transform: uppercase;
+  }
+  .animated-border-quote blockquote {
+    background-color: #212121;
+    border: solid 2px #ffffff;
+    display: inline-block;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    z-index: -1;
+
+  }
+  .animated-border-quote blockquote:before {
+    animation: clockwise 30s infinite linear;
+    background-color: #212121;
+    bottom: 10%;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
+
+  }
+  .animated-border-quote blockquote:after {
+    animation: counter 30s infinite linear;
+    background-color: #212121;
+    bottom: 10%;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
+
+  }
+  
+  .animated-border-quote blockquote > * {
+    position: relative;
+    z-index: 0;
+
+  }
+  @keyframes clockwise {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes counter {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /* BUTTON */
+  .center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glow-on-hover {
+    width: 350px;
+    height: 65px;
+    border: none;
+    outline: none;
+    color: #111;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    /*200-1000*/
+    font-style: normal;
+    /*Italic (0) Normal (1)*/
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #fff
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  /* AREA'S */
+
+  .area {
+    display: block;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    color: #111;
+    position: relative; /* Добавлено для корректного позиционирования псевдоэлементов */
+    z-index: 0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+}
+
+
+.area:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 70s linear infinite;
+    opacity: 0.7; /* Изменено: рамка всегда активна */
+    border-radius: 10px;
+}
+
+.area:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-image: url("../cards_img/pattern.png");
+    background-position-y: center;
+    background-position-x: center;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.area .area_name {
+  display: block;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 800;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* LISTS (players and teams) */
+.wrapper,
+.wrapper:before,
+.wrapper:after {
+  box-sizing: border-box;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.universal-card {
+  width: 360px;
+  margin: 0px auto;
+  box-shadow: 0 0 20px 8px #c5c5c5;
+  border-radius: 20px;
+  background: #f2f2f2;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 440px){
+  .universal-card {
+    width: 355px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .universal-card {
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 411px){
+  .universal-card {
+    width: 335px;
+  }
+}
+
+@media screen and (max-width: 401px){
+  .universal-card {
+    width: 325px;
+  }
+}
+
+.element {
+  position: relative;
+  margin: 12px 0;
+}
+
+.user_login {
+  color: #111;
+  font-size: 21px;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  text-align: center;
+  font-weight: 700;
+  color: #111;
+  font-size: 20px;
+}
+
+.about-item {
+  color: #7a7a7a;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* DELETE */
+.flex_delete-box {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-box {
+  text-align: center;
+  margin: 0px 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  width: 70%;
+}
+
+.button {
+  display: block;
+  background-color: #c0392b;
+  height: 50px;
+  line-height: 2.5;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 25px;
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span,
+.button .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+.button span {
+  width: 72%;
+  line-height: inherit;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span:after {
+  content: "";
+  background-color: #a53125;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+.button .icon {
+  width: 28%;
+  right: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button .icon .fa {
+  font-size: 30px;
+  vertical-align: middle;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+.button .icon .fa-remove {
+  height: 36px;
+}
+.button .icon .fa-check {
+  display: none;
+}
+.button.success span, .button:hover span {
+  left: -72%;
+  opacity: 0;
+}
+.button.success .icon, .button:hover .icon {
+  width: 100%;
+}
+.button.success .icon .fa, .button:hover .icon .fa {
+  font-size: 41px;
+}
+
+.button.success .icon .fa-remove {
+  display: none;
+}
+.button.success .icon .fa-check {
+  display: inline-block;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button:hover .icon .fa-remove {
+  height: 46px;
+}
+.button:active {
+  opacity: 1;
+}
+
+
+/* WRITE BUTTON */
+.write-box {
+  text-align: center;
+  margin: 0px 0;
+  margin-bottom: 10px;
+}
+
+.container-write-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.wrap-write-btn {
+  width: 70%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.write-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(to right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  top: 0;
+  left: -100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.write-btn {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.wrap-write-btn:hover .write-bgbtn {
+  left: 0;
+}
+
+@media screen and (max-width: 1000px){
+  .area {
+    width: 80%;
+    
+  }
+
+  .area .area_name {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 670px){
+  .area {
+    width: 88%;
+  }
+}
+
+.game_img {
+  /* МЕНЯЕТСЯ ШИРИНА */
+  width: 90px; 
+  /* МЕНЯЕТСЯ ВЫСОТА */
+  height: 90px;
+  /* background: url('../navbar_img/icons8-valorant-500.png') center/cover no-repeat; */
+  scale: 100%;
+  filter: invert(1);
+}
+
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Активный класс для показа модального окна */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(5px); /* Блюр применяется только при открытии */
+}
+
+/* Контент модального окна */
+.modal-content {
+  position: relative;
+  background: white;
+  width: 360px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+  /* Начальная позиция за пределами экрана */
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.modal-content h2{
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.modal-content h3{
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#no {
+  width: 40%;
+  margin-top: 10px;
+  padding: 15px;
+  background: #c80000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#no:hover {
+  background: #525252;
+}
+
+#yes {
+  width: 40%;
+  margin-top: 10px;
+  padding: 15px;
+  background: #43ac6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+
+#yes:hover {
+  background: #525252;
+}
+
+/* Анимация появления контента */
+.modal.show .modal-content {
+  transform: translateY(0); /* Плавно спускается в центр */
+  opacity: 1;
+}
+
+/* Анимация закрытия (добавляется перед скрытием) */
+.modal.hide .modal-content {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.recipient-info {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.close:hover{
+  color: #c80000;
+}
+
+/* Поле ввода */
+#message-text {
+  font-family: "Nunito", serif;
+  width: 93%;
+  height: 130px;
+  margin-top: 10px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Кнопка отправки */
+#send-message {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #43ac6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#send-message:hover {
+  background: #525252;
+}
+
+.modal-messages {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.error-message {
+  color: #c80000;
+  font-weight: 700;
+}
+.success-message {
+  color: #43ac6a;
+  font-weight: 700;
+}
+
+.are_u_sure h2{
+  margin-top: 10px;
+}

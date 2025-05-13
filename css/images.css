@@ -1,0 +1,249 @@
+.image-valorant {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 200px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 150px;
+    background: url('../logo_img/logo_valorant.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 100px;
+    scale: 110%;
+}
+
+.second_img-valorant {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 150px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 80px;
+  background: url('../logo_img/logo_valorant.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 105%;
+
+}
+
+.image-rl {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 336px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 150px;
+    background: url('../logo_img/logo_rl.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 32px;
+    scale: 80%;
+}
+
+.second_img-rl {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 200px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 80px;
+  background: url('../logo_img/logo_rl.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 105%;
+}
+
+.image-cs2 {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 200px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 150px;
+    background: url('../logo_img/logo_cs2.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    filter: invert(1);
+    margin: 0 100px;
+    scale: 160%;
+}
+
+.second_img-cs2 {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 150px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 80px;
+  background: url('../logo_img/logo_cs2.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 155%;
+}
+
+.image-apex {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 200px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 150px;
+    background: url('../logo_img/logo_apex.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 100px;
+    scale: 120%;
+    filter: invert(1);
+    transform: translateY(2px);
+
+}
+
+.second_img-apex {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 150px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 90px;
+  margin-bottom: -10px;
+  background: url('../logo_img/logo_apex.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 85%;
+  transform: translateY(-3px);
+
+}
+
+.image-dota2 {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 200px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 230px;
+    background: url('../logo_img/logo_dota2.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 100px;
+    scale: 67%;
+    margin-bottom: -80px;
+    transform: translateY(-58px);
+}
+
+.second_img-dota2 {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 150px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 170px;
+  background: url('../logo_img/logo_dota2.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 50%;
+  margin-bottom: -90px;
+  transform: translateY(-90px);
+}
+
+.image-pubg {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 480px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 150px;
+    background: url('../logo_img/logo_pubg.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 -40px;
+    scale: 60%;
+}
+
+.second_img-pubg {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 300px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 95px;
+  background: url('../logo_img/logo_pubg.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 70%;
+  margin-bottom: -15px;
+  transform: translateY(-10px);
+}
+
+.image-fortnite {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 240px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 150px;
+    background: url('../logo_img/logo_fortnite.jpg') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 80px;
+    scale: 95%;
+    filter: invert(1);
+    transform: translateY(-3px);
+}
+
+.second_img-fortnite {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 150px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 100px;
+  background: url('../logo_img/logo_fortnite.jpg') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 85%;
+  margin-bottom: -20px;
+  transform: translateY(-10px);
+}
+
+.image-overwatch2 {
+    /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+    width: 310px; 
+    /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+    height: 160px;
+    background: url('../logo_img/logo_overwatch2.png') center/cover no-repeat; /* Заменить на путь к картинке */
+    margin: 0 45px;
+    scale: 85%;
+    margin-bottom: -10px;
+    transform: translateY(-10px);
+}
+
+.second_img-overwatch2 {
+  display: none;
+  /* МЕНЯЕТСЯ ШИРИНА, ДВИГАЯ СОСЕДНИЕ КНОПКИ */
+  width: 193px; 
+  /* МЕНЯЕТСЯ ВЫСОТА, НО ТОЛЬКО МАСШТАБОМ КАРТИНКИ, КНОПКИ НЕ ДВИГАЮТСЯ */
+  height: 100px;
+  background: url('../logo_img/logo_overwatch2.png') center/cover no-repeat; /* Заменить на путь к картинке */
+  scale: 80%;
+  filter: invert(1);
+  margin-bottom: -20px;
+  transform: translateY(-12px);
+}
+
+  
+  @media screen and (max-width: 1000px){
+    .image-valorant {
+      opacity: 0;
+      margin: 0 10px;
+    }
+    .second_img-valorant {
+      display: block;
+    }
+
+    .image-rl {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-rl {
+        display: block;
+      }
+
+      .image-cs2 {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-cs2 {
+        display: block;
+      }
+
+      .image-apex {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-apex {
+        display: block;
+      }
+
+      .image-dota2 {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-dota2 {
+        display: block;
+      }
+
+      .image-pubg {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-pubg {
+        display: block;
+      }
+
+      .image-fortnite {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-fortnite {
+        display: block;
+      }
+
+      .image-overwatch2 {
+        opacity: 0;
+        margin: 0 10px;
+      }
+      .second_img-overwatch2 {
+        display: block;
+      }
+  }

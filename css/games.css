@@ -1,0 +1,698 @@
+/* botton headers */
+.animated-border-quote {
+    font-size: 24px;
+    font-weight: 800;
+    display: inline-block;
+    max-width: 20em;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .animated-border-quote blockquote {
+    background-color: #212121;
+    border: solid 2px #ffffff;
+    display: inline-block;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    width: 150px;
+    line-height: 0.5;
+    z-index: -1;
+  }
+  .animated-border-quote blockquote:before {
+    animation: clockwise 30s infinite linear;
+    background-color: #212121;
+    bottom: 10%;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
+  }
+  .animated-border-quote blockquote:after {
+    animation: counter 30s infinite linear;
+    background-color: #212121;
+    bottom: 10%;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
+  }
+  
+  .animated-border-quote blockquote > * {
+    position: relative;
+    z-index: 0;
+  }
+  @keyframes clockwise {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes counter {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+/*BUTTON*/
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #111;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    /*200-1000*/
+    font-style: normal;
+    /*Italic (0) Normal (1)*/
+    letter-spacing: 1px;
+
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #fff
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+
+/* content */
+.content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.area {
+    display: none;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    color: #111;
+    position: relative; /* Добавлено для корректного позиционирования псевдоэлементов */
+    z-index: 0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+}
+
+
+.area:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 70s linear infinite;
+    opacity: 0.7; /* Изменено: рамка всегда активна */
+    border-radius: 10px;
+}
+
+.area:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-image: url("../cards_img/pattern.png");
+    background-position-y: center;
+    background-position-x: center;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.area .area_name {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#player_list {
+  display: block;
+}
+
+#player_new::after {
+  background-image: url("../cards_img/more_pattern.png");
+}
+
+#team_new::after {
+  background-image: url("../cards_img/more_pattern.png");
+}
+
+/* FORMS (players and teams) */
+.wrapper,
+.wrapper:before,
+.wrapper:after {
+  box-sizing: border-box;
+}
+
+form {
+  width: 335px;
+  margin: 0px auto;
+}
+
+.group {
+  position: relative;
+  margin: 40px 0;
+}
+
+.input_info_big {
+  resize: none;
+}
+
+.input_info,
+.input_info_big {
+  background: none;
+  color: #111;
+  font-size: 20px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+  font-weight: 600;
+}
+.input_info:focus,
+.input_info_big:focus {
+  outline: none;
+}
+.input_info:focus ~ .input_info_label, .input_info:valid ~ .input_info_label,
+.input_info_big:focus ~ .input_info_label,
+.input_info_big:valid ~ .input_info_label {
+  top: -14px;
+  font-size: 14px;
+  color: #bbbbbb;
+  font-weight: 600;
+}
+.input_info:focus ~ .bar:before,
+.input_info_big:focus ~ .bar:before {
+  width: 335px;
+}
+
+.input_info_label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 335px;
+}
+.bar:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #69a9c2;
+    background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+    background: -o-linear-gradient(left, #21d4fd, #b721ff);
+    background: -moz-linear-gradient(left, #21d4fd, #b721ff);
+    background: linear-gradient(left, #21d4fd, #b721ff);
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+.btn-box {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.container-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.wrap-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(to right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  top: 0;
+  left: -100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.form-btn {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.wrap-form-btn:hover .form-bgbtn {
+  left: 0;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px){
+  .content {
+    scale: 90%;
+  }
+  .area {
+    width: 80%;
+    
+  }
+  #info {
+    font-size: 21px;
+  }
+  .area .area_name {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 670px){
+  .content {
+    scale: 90%;
+  }
+  .area {
+    width: 88%;
+  }
+  .wrap-form-btn {
+    width: 80%;
+  }
+}
+
+/* SUCCESS SEND */
+.alert-box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  position: fixed;
+  top: 0;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  font-size: 0.8125rem;
+  background-color: #008cba;
+  border-color: #0078a0;
+  color: white;
+  box-shadow: 0px 1px 5px 0 darkslategrey;
+  z-index: 5;
+  margin-top: 5px;
+}
+
+.alert-box.success {
+  background-color: #43ac6a;
+  border-color: #3a945b;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+/* LISTS (players and teams) */
+
+.universal-card {
+  width: 360px;
+  margin: 0px auto;
+  box-shadow: 0 0 20px 8px #c5c5c5;
+  border-radius: 20px;
+  background: #f2f2f2;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 440px){
+  .universal-card {
+    width: 355px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .universal-card {
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 411px){
+  .universal-card {
+    width: 335px;
+  }
+}
+
+@media screen and (max-width: 401px){
+  .universal-card {
+    width: 325px;
+  }
+}
+
+.element {
+  position: relative;
+  margin: 12px 0;
+}
+
+.user_login {
+  color: #111;
+  font-size: 21px;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  text-align: center;
+  font-weight: 700;
+  color: #111;
+  font-size: 20px;
+}
+
+.about-item {
+  color: #7a7a7a;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* WRITE BUTTON */
+.write-box {
+  text-align: center;
+  margin: 0px 0;
+  margin-bottom: 10px;
+}
+
+.container-write-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.wrap-write-btn {
+  width: 70%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.write-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(to right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  top: 0;
+  left: -100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.write-btn {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.wrap-write-btn:hover .write-bgbtn {
+  left: 0;
+}
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Активный класс для показа модального окна */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(5px); /* Блюр применяется только при открытии */
+}
+
+/* Контент модального окна */
+.modal-content {
+  position: relative;
+  background: white;
+  width: 360px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+  /* Начальная позиция за пределами экрана */
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.modal-content h2{
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+/* Анимация появления контента */
+.modal.show .modal-content {
+  transform: translateY(0); /* Плавно спускается в центр */
+  opacity: 1;
+}
+
+/* Анимация закрытия (добавляется перед скрытием) */
+.modal.hide .modal-content {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.recipient-info {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.close:hover{
+  color: #c80000;
+}
+
+/* Поле ввода */
+#message-text {
+  font-family: "Nunito", serif;
+  width: 93%;
+  height: 130px;
+  margin-top: 10px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Кнопка отправки */
+#send-message {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #43ac6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#send-message:hover {
+  background: #525252;
+}
+
+.modal-messages {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.error-message {
+  color: #c80000;
+  font-weight: 700;
+}
+.success-message {
+  color: #43ac6a;
+  font-weight: 700;
+}
